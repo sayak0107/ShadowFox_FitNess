@@ -1,0 +1,237 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/cycling_bgm"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FitNess"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="#FBFAFA"
+                android:textStyle="bold"
+                android:fontFamily="cursive"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/bgm"/>
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:columnCount="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/yogaCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="148dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_bgm"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="160dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginEnd="88dp"
+                                android:layout_marginBottom="18dp"
+                                android:text="Yoga"
+                                android:fontFamily="cursive"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_yoga"
+                                android:layout_width="79dp"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="60dp"
+                                android:layout_marginBottom="40dp"
+                                android:background="@drawable/button_bgm"
+                                android:text="START NOW"
+                                android:textColor="#510DCA"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="148dp"
+                            android:layout_height="148dp"
+                            android:layout_marginEnd="160dp"
+                            android:src="@drawable/yoga1" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cyclingCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="148dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="50dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient2_bgm"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="160dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginEnd="55dp"
+                                android:layout_marginBottom="18dp"
+                                android:text="Cycling"
+                                android:fontFamily="cursive"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_cycling"
+                                android:layout_width="79dp"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="60dp"
+                                android:layout_marginBottom="40dp"
+                                android:background="@drawable/button_bgm"
+                                android:text="START NOW"
+                                android:textColor="#079184"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="148dp"
+                            android:layout_height="148dp"
+                            android:layout_marginEnd="160dp"
+                            android:src="@drawable/cycling" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/runningCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="148dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="50dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient3_bgm"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="160dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="9dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginEnd="45dp"
+                                android:layout_marginBottom="18dp"
+                                android:text="Running"
+                                android:fontFamily="cursive"
+                                android:textColor="@color/white"
+                                android:textSize="40sp" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_running"
+                                android:layout_width="79dp"
+                                android:layout_height="48dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="60dp"
+                                android:layout_marginBottom="40dp"
+                                android:background="@drawable/button_bgm"
+                                android:text="START NOW"
+                                android:textColor="#FA1707"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="148dp"
+                            android:layout_height="148dp"
+                            android:layout_marginEnd="160dp"
+                            android:src="@drawable/running1"
+                            />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+
+            <!-- Content goes here -->
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                app:menu="@menu/bottom_nav_menu"
+                app:labelVisibilityMode="labeled"
+                android:background="@drawable/nav_bgm"
+                app:itemIconTint="@color/selector_nav_item"
+                app:itemTextColor="@color/selector_nav_item"/>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

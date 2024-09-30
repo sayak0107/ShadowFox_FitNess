@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cycling_bgm"
+    tools:context=".YogaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        tools:ignore="MissingConstraints">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="FitNess"
+          android:textSize="30dp"
+          android:layout_gravity="center"
+          android:layout_margin="5dp"
+          android:textColor="#FBFAFA"
+          android:textStyle="bold"
+          android:fontFamily="cursive"/>
+
+  </LinearLayout>
+
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/yogaCard"
+          android:layout_width="match_parent"
+          android:layout_height="230dp"
+          android:layout_margin="20dp"
+          android:layout_marginTop="50dp"
+          app:cardCornerRadius="40dp"
+          app:cardElevation="10dp"
+          app:cardBackgroundColor="#80FBFBFB">
+
+          <com.airbnb.lottie.LottieAnimationView
+              android:id="@+id/lottie2"
+              android:layout_width="237dp"
+              android:layout_height="195dp"
+              android:layout_gravity="center"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="10dp"
+              app:lottie_autoPlay="true"
+              app:lottie_loop="true"
+              app:lottie_rawRes="@raw/breathing" />
+
+          <TextView
+              android:id="@+id/eventname"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="180dp"
+              android:fontFamily="cursive"
+              android:text="Let's Breathing"
+              android:textAlignment="center"
+              android:textColor="#000730"
+              android:textSize="35sp" />
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/yogaCard1"
+          android:layout_width="match_parent"
+          android:layout_height="156dp"
+          android:layout_margin="20dp"
+          android:layout_marginTop="50dp"
+          app:cardBackgroundColor="#80FBFBFB"
+          app:cardCornerRadius="40dp"
+          app:cardElevation="10dp">
+
+          <TextView
+              android:id="@+id/yoganame1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Padmasana"
+              android:textSize="24sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="60dp"
+              android:layout_marginStart="140dp"/>
+
+          <TextView
+              android:id="@+id/timerText1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="05:00"
+              android:textSize="34sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="30dp"
+              android:layout_marginStart="250dp"/>
+
+          <!-- Start Button -->
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/startButton1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/timerText1"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="80dp"
+              android:background="@drawable/gradient3_bgm"
+              android:layout_marginStart="250dp"
+              android:text="Start"
+              android:textColor="@color/white"/>
+
+          <ImageView
+              android:layout_width="148dp"
+              android:layout_height="155dp"
+              android:layout_marginStart="5dp"
+              android:src="@drawable/padmasa" />
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/yogaCard2"
+          android:layout_width="match_parent"
+          android:layout_height="156dp"
+          android:layout_margin="20dp"
+          android:layout_marginTop="50dp"
+          app:cardBackgroundColor="#80FBFBFB"
+          app:cardCornerRadius="40dp"
+          app:cardElevation="10dp">
+
+          <TextView
+              android:id="@+id/yoganame2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Bhujangasana"
+              android:textSize="24sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="60dp"
+              android:layout_marginStart="100dp"/>
+
+          <TextView
+              android:id="@+id/timerText2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="01:00"
+              android:textSize="34sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="30dp"
+              android:layout_marginStart="250dp"/>
+
+          <!-- Start Button -->
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/startButton2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/timerText2"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="80dp"
+              android:background="@drawable/gradient3_bgm"
+              android:layout_marginStart="250dp"
+              android:text="Start"
+              android:textColor="@color/white"/>
+
+          <ImageView
+              android:layout_width="148dp"
+              android:layout_height="155dp"
+              android:layout_marginStart="5dp"
+              android:src="@drawable/bujanjasana" />
+      </androidx.cardview.widget.CardView>
+      <androidx.cardview.widget.CardView
+          android:id="@+id/yogaCard3"
+          android:layout_width="match_parent"
+          android:layout_height="156dp"
+          android:layout_margin="20dp"
+          android:layout_marginTop="50dp"
+          app:cardBackgroundColor="#80FBFBFB"
+          app:cardCornerRadius="40dp"
+          app:cardElevation="10dp">
+          <TextView
+              android:id="@+id/yoganame3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Balasana"
+              android:textSize="24sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="60dp"
+              android:layout_marginStart="150dp"/>
+          <TextView
+              android:id="@+id/timerText3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="01:00"
+              android:textSize="34sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="30dp"
+              android:layout_marginStart="250dp"/>
+
+          <!-- Start Button -->
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/startButton3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/timerText3"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="80dp"
+              android:background="@drawable/gradient3_bgm"
+              android:layout_marginStart="250dp"
+              android:text="Start"
+              android:textColor="@color/white"/>
+
+          <ImageView
+              android:layout_width="148dp"
+              android:layout_height="155dp"
+              android:layout_marginStart="5dp"
+              android:src="@drawable/balasana" />
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/yogaCard4"
+          android:layout_width="match_parent"
+          android:layout_height="156dp"
+          android:layout_margin="20dp"
+          android:layout_marginTop="50dp"
+          app:cardBackgroundColor="#80FBFBFB"
+          app:cardCornerRadius="40dp"
+          app:cardElevation="10dp">
+          <TextView
+              android:id="@+id/yoganame4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Paschimottanasana"
+              android:textSize="24sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="110dp"
+              android:layout_marginStart="20dp"/>
+          <TextView
+              android:id="@+id/timerText4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="01:00"
+              android:textSize="34sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="30dp"
+              android:layout_marginStart="250dp"/>
+
+          <!-- Start Button -->
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/startButton4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/timerText4"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="80dp"
+              android:background="@drawable/gradient3_bgm"
+              android:layout_marginStart="250dp"
+              android:text="Start"
+              android:textColor="@color/white"/>
+
+          <ImageView
+              android:layout_width="148dp"
+              android:layout_height="155dp"
+              android:layout_marginStart="5dp"
+              android:src="@drawable/paschimattasana" />
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/yogaCard5"
+          android:layout_width="match_parent"
+          android:layout_height="156dp"
+          android:layout_margin="20dp"
+          android:layout_marginTop="50dp"
+          app:cardBackgroundColor="#80FBFBFB"
+          app:cardCornerRadius="40dp"
+          app:cardElevation="10dp">
+          <TextView
+              android:id="@+id/yoganame5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Dhanurasana"
+              android:textSize="24sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="60dp"
+              android:layout_marginStart="130dp"/>
+          <TextView
+              android:id="@+id/timerText5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="01:00"
+              android:textSize="34sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="30dp"
+              android:layout_marginStart="250dp"/>
+
+          <!-- Start Button -->
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/startButton5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/timerText5"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="80dp"
+              android:background="@drawable/gradient3_bgm"
+              android:layout_marginStart="250dp"
+              android:text="Start"
+              android:textColor="@color/white"/>
+
+          <ImageView
+              android:layout_width="148dp"
+              android:layout_height="155dp"
+              android:layout_marginStart="5dp"
+              android:src="@drawable/dhanurasana" />
+      </androidx.cardview.widget.CardView>
+
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/yogaCard6"
+          android:layout_width="match_parent"
+          android:layout_height="156dp"
+          android:layout_margin="20dp"
+          android:layout_marginTop="50dp"
+          app:cardBackgroundColor="#80FBFBFB"
+          app:cardCornerRadius="40dp"
+          app:cardElevation="10dp">
+          <TextView
+              android:id="@+id/yoganame6"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Halasana"
+              android:textSize="24sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="60dp"
+              android:layout_marginStart="150dp"/>
+          <TextView
+              android:id="@+id/timerText6"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="01:00"
+              android:textSize="34sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="30dp"
+              android:layout_marginStart="250dp"/>
+
+          <!-- Start Button -->
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/startButton6"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/timerText6"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="80dp"
+              android:background="@drawable/gradient3_bgm"
+              android:layout_marginStart="250dp"
+              android:text="Start"
+              android:textColor="@color/white"/>
+
+          <ImageView
+              android:layout_width="148dp"
+              android:layout_height="155dp"
+              android:layout_marginStart="5dp"
+              android:src="@drawable/halasana" />
+      </androidx.cardview.widget.CardView>
+
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/yogaCard7"
+          android:layout_width="match_parent"
+          android:layout_height="156dp"
+          android:layout_margin="20dp"
+          android:layout_marginTop="50dp"
+          app:cardBackgroundColor="#80FBFBFB"
+          app:cardCornerRadius="40dp"
+          app:cardElevation="10dp">
+          <TextView
+              android:id="@+id/yoganame7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Natarajasana"
+              android:textSize="24sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="60dp"
+              android:layout_marginStart="130dp"/>
+          <TextView
+              android:id="@+id/timerText7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="01:00"
+              android:textSize="34sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="30dp"
+              android:layout_marginStart="250dp"/>
+
+          <!-- Start Button -->
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/startButton7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/timerText7"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="80dp"
+              android:background="@drawable/gradient3_bgm"
+              android:layout_marginStart="250dp"
+              android:text="Start"
+              android:textColor="@color/white"/>
+
+          <ImageView
+              android:layout_width="148dp"
+              android:layout_height="155dp"
+              android:layout_marginStart="5dp"
+              android:src="@drawable/natarajasana" />
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/yogaCard8"
+          android:layout_width="match_parent"
+          android:layout_height="156dp"
+          android:layout_margin="20dp"
+          android:layout_marginTop="50dp"
+          app:cardBackgroundColor="#80FBFBFB"
+          app:cardCornerRadius="40dp"
+          app:cardElevation="10dp">
+          <TextView
+              android:id="@+id/yoganame8"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Virabhadrasana"
+              android:textSize="24sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="60dp"
+              android:layout_marginStart="100dp"/>
+          <TextView
+              android:id="@+id/timerText8"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="01:00"
+              android:textSize="34sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="30dp"
+              android:layout_marginStart="250dp"/>
+
+          <!-- Start Button -->
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/startButton8"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/timerText8"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="80dp"
+              android:background="@drawable/gradient3_bgm"
+              android:layout_marginStart="250dp"
+              android:text="Start"
+              android:textColor="@color/white"/>
+
+          <ImageView
+              android:layout_width="148dp"
+              android:layout_height="155dp"
+              android:layout_marginStart="5dp"
+              android:src="@drawable/virabhadrasana" />
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/yogaCard9"
+          android:layout_width="match_parent"
+          android:layout_height="156dp"
+          android:layout_margin="20dp"
+          android:layout_marginTop="50dp"
+          app:cardBackgroundColor="#80FBFBFB"
+          app:cardCornerRadius="40dp"
+          app:cardElevation="10dp">
+          <TextView
+              android:id="@+id/yoganame9"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Adho Mukha Svanasana"
+              android:textSize="24sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="10dp"
+              android:layout_marginStart="20dp"/>
+          <TextView
+              android:id="@+id/timerText9"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="01:00"
+              android:textSize="34sp"
+              android:textColor="#000730"
+              android:fontFamily="cursive"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="30dp"
+              android:layout_marginStart="250dp"/>
+
+          <!-- Start Button -->
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/startButton9"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/timerText9"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="80dp"
+              android:background="@drawable/gradient3_bgm"
+              android:layout_marginStart="250dp"
+              android:text="Start"
+              android:textColor="@color/white"/>
+
+          <ImageView
+              android:layout_width="148dp"
+              android:layout_height="155dp"
+              android:layout_marginStart="5dp"
+              android:src="@drawable/adhomukhasvanasana" />
+      </androidx.cardview.widget.CardView>
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/completeYogaButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Complete Workout"
+          android:layout_gravity="center"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="10dp"
+          android:background="@drawable/gradient3_bgm"
+          android:textColor="@android:color/white"
+          android:padding="10dp"/>
+  </LinearLayout>
+    </ScrollView>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+

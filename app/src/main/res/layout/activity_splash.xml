@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SplashActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="220dp"
+            android:src="@drawable/bgm" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="27dp"
+            android:paddingRight="27dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/front_bgm" />
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="390dp"-->
+<!--            android:layout_marginBottom="400dp"-->
+<!--            android:src="@drawable/front3_bgm" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="130dp"
+            android:textColor="#3F51B5"
+            android:text="LET'S FIT"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="YOURSELF"
+            android:textColor="#FFFFFF"
+            android:textSize="75sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="148dp"
+            android:textColor="#3F51B5"
+            android:text="TODAY"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="40sp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="418dp"
+        android:layout_height="412dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/splash" />
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:fontFamily="cursive"
+        android:text="FitNess"
+        android:textColor="#606CB5"
+        android:textSize="35sp" />
+</LinearLayout>
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="@drawable/cycling_bgm"-->
+<!--android:orientation="vertical"-->
+<!--android:gravity="center"-->
+<!--tools:context=".SplashActivity">-->
+
+<!--<RelativeLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:gravity="center">-->
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="220dp"-->
+<!--        android:src="@drawable/bgm" />-->
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="450dp"-->
+<!--        android:layout_marginBottom="430dp"-->
+<!--        android:src="@drawable/front_bgm" />-->
+
+<!--    &lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_height="390dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_marginBottom="400dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:src="@drawable/front3_bgm" />&ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="35dp"-->
+<!--        android:layout_marginStart="133dp"-->
+<!--        android:textColor="#3F51B5"-->
+<!--        android:text="LET'S FIT"-->
+<!--        android:fontFamily="sans-serif-condensed-medium"-->
+<!--        android:textSize="40sp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:fontFamily="sans-serif-condensed-medium"-->
+<!--        android:text="YOURSELF"-->
+<!--        android:textColor="#000730"-->
+<!--        android:textSize="80sp"-->
+<!--        android:textStyle="bold" />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:layout_marginStart="148dp"-->
+<!--        android:textColor="#3F51B5"-->
+<!--        android:text="TODAY"-->
+<!--        android:fontFamily="sans-serif-condensed-medium"-->
+<!--        android:textSize="40sp"/>-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="550dp"-->
+<!--        android:layout_marginTop="260dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:src="@drawable/fro_back" />-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:gravity="center">-->
+
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:id="@+id/lottie"-->
+<!--            android:layout_width="418dp"-->
+<!--            android:layout_height="403dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="150dp"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_loop="true"-->
+<!--            app:lottie_rawRes="@raw/splash3" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/appname"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="43dp"-->
+<!--            android:layout_marginTop="90dp"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:fontFamily="cursive"-->
+<!--            android:text="FitNess"-->
+<!--            android:textColor="#606CB5"-->
+<!--            android:textSize="35sp" />-->
+<!--    </LinearLayout>-->
+<!--</RelativeLayout>-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
